@@ -1,0 +1,2 @@
+Components we need:
+1. Menu
