@@ -26,6 +26,13 @@ const projectsPage = function () {
         <Projects />
     );
 }
+
+const resume = function () {
+    const root = createRoot(document.getElementById('root')!)
+    root.render(
+        <p style={{color : "white"}}>Resume</p>
+    );
+}
   
 // https://github.com/parthwebdev/UI-Animation/blob/main/Menus/01/style.css
 export default function MyApp() {
@@ -47,6 +54,7 @@ export default function MyApp() {
                         <li><a href="#" onClick={homePage} className="link">Home</a></li>
                         <li><a href="#" onClick={aboutMePage} className="link">About Me</a></li>
                         <li><a href="#" onClick={projectsPage} className="link">Projects</a></li>
+                        <li><a href="#" onClick={resume} className="link">Resume</a></li>
                     </ul>
                 </nav>
                 <p style={{paddingRight: 10}}></p>
