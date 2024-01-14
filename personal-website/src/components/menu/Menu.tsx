@@ -1,5 +1,30 @@
 import './Menu.css';
+import React from 'react';
+import { createRoot } from 'react-dom/client';
 import { SocialIcon } from 'react-social-icons'
+import Home from './../../pages/home/Home';
+import AboutMe from './../../pages/aboutme/AboutMe';
+
+const homePage = function () {
+    const root = createRoot(document.getElementById('root')!)
+    root.render(
+        <Home />
+    );
+}
+
+const aboutMePage = function () {
+    const root = createRoot(document.getElementById('root')!)
+    root.render(
+        <AboutMe />
+    );
+}
+
+const projectsPage = function () {
+    const root = createRoot(document.getElementById('root')!)
+    root.render(
+        <p style={{color: "white"}}>Projects</p>
+    );
+}
   
 // https://github.com/parthwebdev/UI-Animation/blob/main/Menus/01/style.css
 export default function MyApp() {
@@ -18,11 +43,12 @@ export default function MyApp() {
             <div className="divClassRight">
                 <nav>
                     <ul>
-                        <li><a href="#" className="link">Home</a></li>
-                        <li><a href="#" className="link">About Me</a></li>
-                        <li><a href="#" className="link">Projects</a></li>
+                        <li><a href="#" onClick={homePage} className="link">Home</a></li>
+                        <li><a href="#" onClick={aboutMePage} className="link">About Me</a></li>
+                        <li><a href="#" onClick={projectsPage} className="link">Projects</a></li>
                     </ul>
                 </nav>
+                <p style={{paddingRight: 10}}></p>
             </div>
         </div>
         <hr className="menu-hr" />
