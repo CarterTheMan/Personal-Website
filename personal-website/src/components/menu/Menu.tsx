@@ -4,6 +4,7 @@ import { createRoot } from 'react-dom/client';
 import { SocialIcon } from 'react-social-icons'
 import Home from './../../pages/home/Home';
 import AboutMe from './../../pages/aboutme/AboutMe';
+import Projects from './../../pages/projects/Projects';
 
 const homePage = function () {
     const root = createRoot(document.getElementById('root')!)
@@ -22,7 +23,7 @@ const aboutMePage = function () {
 const projectsPage = function () {
     const root = createRoot(document.getElementById('root')!)
     root.render(
-        <p style={{color: "white"}}>Projects</p>
+        <Projects />
     );
 }
   
