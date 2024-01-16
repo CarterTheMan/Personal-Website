@@ -1,0 +1,23 @@
+.project-header {
+    color: #5AA3FB;
+    font-size: 4vw;
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.project-container {
+    padding: 2%;
+    grid-template-columns: 40% 60%;
+    column-gap: 0px;
+    text-align: center;
+}
+
+.project-video-div {
+    margin-left: calc(50vw - 300px);
+}
+
+.project-code-section {
+    text-align: center;
+    margin: auto;
+}

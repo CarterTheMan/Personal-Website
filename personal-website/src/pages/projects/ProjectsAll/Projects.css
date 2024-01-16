@@ -1,12 +1,19 @@
 .projects-container {
-    /* width: 100%; */
     display: grid;
     padding: 2%;
     padding-top: 2vh;
     padding-left: 2vw;
-    padding-bottom: 5vh;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     justify-content: space-between;
     column-gap: 0px;
     text-align: center;
+}
+
+.projects-page {
+    width: 100%
+}
+
+.projects-page h1 {
+    color: #5AA3FB;
+    padding-left: 5%;
 }

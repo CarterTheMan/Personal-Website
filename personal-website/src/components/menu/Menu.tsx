@@ -2,9 +2,12 @@ import './Menu.css';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { SocialIcon } from 'react-social-icons'
-import Home from './../../pages/home/Home';
-import AboutMe from './../../pages/aboutme/AboutMe';
-import Projects from './../../pages/projects/Projects';
+import Home from '../../pages/Home/Home';
+import AboutMe from '../../pages/AboutMe/AboutMe';
+import Projects from '../../pages/projects/ProjectsAll/Projects';
+
+// Temporary to test individual project page
+import Project from "../../pages/projects/ProjectsIndividual/Project"
 
 const homePage = function () {
     const root = createRoot(document.getElementById('root')!)
@@ -30,7 +33,8 @@ const projectsPage = function () {
 const resume = function () {
     const root = createRoot(document.getElementById('root')!)
     root.render(
-        <p style={{color : "white"}}>Resume</p>
+        // Just for testing the project page
+        <Project  title="test title" description='test description' videoID='MmCmq4J1QuI' codeLink='https://github.com/CarterTheMan/Personal-Website' />
     );
 }
   
