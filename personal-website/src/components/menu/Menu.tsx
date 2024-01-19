@@ -8,6 +8,7 @@ import Projects from '../../pages/projects/ProjectsAll/Projects';
 
 // Temporary to test individual project page
 import Project from "../../pages/projects/ProjectsIndividual/Project"
+import { pythonProjects } from "./../../pages/projects/ProjectsInfo/ProjectsList"
 
 const homePage = function () {
     const root = createRoot(document.getElementById('root')!)
@@ -33,8 +34,7 @@ const projectsPage = function () {
 const resume = function () {
     const root = createRoot(document.getElementById('root')!)
     root.render(
-        // Just for testing the project page
-        <Project  title="test title" description='test description' videoID='MmCmq4J1QuI' codeLink='https://github.com/CarterTheMan/Personal-Website' />
+        <p style={{color: 'white'}}>resume</p>
     );
 }
   

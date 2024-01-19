@@ -10,7 +10,7 @@ export default function MyApp() {
             <div className='projects-container'>
                 {
                     pythonProjects.map(function(data) {
-                        return (<FlipCard title={data.title} description={data.shortDescription} imagePath={data.imagePath} />)
+                        return (<FlipCard projectInformation={data} />)
                     })
                 }
             </div>
@@ -18,7 +18,7 @@ export default function MyApp() {
             <div className='projects-container'>
                 {
                     javaProjects.map(function(data) {
-                        return (<FlipCard title={data.title} description={data.shortDescription} imagePath={data.imagePath} />)
+                        return (<FlipCard projectInformation={data} />)
                     })
                 }
             </div>

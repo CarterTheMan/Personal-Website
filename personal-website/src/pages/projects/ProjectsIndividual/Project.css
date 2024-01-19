@@ -18,6 +18,11 @@
 }
 
 .project-code-section {
-    text-align: center;
+    /* text-align: center; */
     margin: auto;
 }
+
+.project-footer {
+    text-align: center;
+}
+
