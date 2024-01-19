@@ -17,6 +17,7 @@ interface projectInformationType {
 export default function FlipCard(props : {projectInformation : projectInformationType}) {
 	const [isFlipped, setIsFlipped] = useState(false);
 	const project = props.projectInformation;
+	const description = project.cardDescription;
 
 	const handleMouseEnter = () => {
 		setIsFlipped(true);
@@ -34,10 +35,10 @@ export default function FlipCard(props : {projectInformation : projectInformatio
 	}
     
 	return (
-		<div
+		<div 
 			className="flip-card-container"
 			onMouseEnter={handleMouseEnter}
-    		onMouseLeave={handleMouseLeave}
+			onMouseLeave={handleMouseLeave}
 			onClick={() => specificProject()}
 		>	
 			<div
@@ -58,7 +59,7 @@ export default function FlipCard(props : {projectInformation : projectInformatio
 						<div className="card-content-back">
 							<h1>Description</h1>
 							<hr style={{height:2}} />
-							<p>{project.description}</p>
+							<p>{description}</p>
 						</div>
 					</div>
 				</div>

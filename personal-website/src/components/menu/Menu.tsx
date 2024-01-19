@@ -6,10 +6,6 @@ import Home from '../../pages/Home/Home';
 import AboutMe from '../../pages/AboutMe/AboutMe';
 import Projects from '../../pages/projects/ProjectsAll/Projects';
 
-// Temporary to test individual project page
-import Project from "../../pages/projects/ProjectsIndividual/Project"
-import { pythonProjects } from "./../../pages/projects/ProjectsInfo/ProjectsList"
-
 const homePage = function () {
     const root = createRoot(document.getElementById('root')!)
     root.render(
