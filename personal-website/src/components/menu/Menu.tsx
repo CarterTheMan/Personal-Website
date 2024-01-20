@@ -5,6 +5,7 @@ import { SocialIcon } from 'react-social-icons'
 import Home from '../../pages/Home/Home';
 import AboutMe from '../../pages/AboutMe/AboutMe';
 import Projects from '../../pages/projects/ProjectsAll/Projects';
+import Resume from '../../pages/Resume/Resume'
 
 const homePage = function () {
     const root = createRoot(document.getElementById('root')!)
@@ -30,7 +31,7 @@ const projectsPage = function () {
 const resume = function () {
     const root = createRoot(document.getElementById('root')!)
     root.render(
-        <p style={{color: 'white'}}>resume</p>
+        <Resume />
     );
 }
   
