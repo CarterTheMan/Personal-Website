@@ -1,3 +1,5 @@
+/** Example of how the react components work */
+
 interface MenuProps { 
   /** The text to display inside the button */
   title: string;
