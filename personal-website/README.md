@@ -1,5 +1,7 @@
 This is the react app for the personal website of Carter Moseley.
 
+Everything here was built by Carter Moseley and this will be used as his professional portfolio
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
