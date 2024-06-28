@@ -1,8 +1,5 @@
 import './Resume.css';
-import { pdfjs } from 'react-pdf';
-import ReactPDF from 'react-pdf';
 import { useState } from 'react';
-import { Document, Page } from 'react-pdf';
 
 
 export default function MyApp() {

@@ -2,8 +2,8 @@ import './Menu.css';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { SocialIcon } from 'react-social-icons'
-import Home from '../../pages/Home/Home';
-import AboutMe from '../../pages/AboutMe/AboutMe';
+import Home from '../../pages/home/Home';
+import AboutMe from '../../pages/aboutme/AboutMe';
 import Projects from '../../pages/projects/ProjectsAll/Projects';
 import Resume from '../../pages/Resume/Resume'
 

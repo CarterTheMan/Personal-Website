@@ -1,8 +1,8 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
-import Menu from './components/Menu/Menu'
-import Home from './pages/Home/Home';
+import Menu from './components/menu/Menu';
+import Home from './pages/home/Home';
 
 // Rander in Menu
 const menu = createRoot(document.getElementById('menu')!)

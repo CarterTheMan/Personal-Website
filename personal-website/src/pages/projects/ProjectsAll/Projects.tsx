@@ -1,6 +1,6 @@
 import './Projects.css';
 import { pythonProjects, javaProjects } from '../ProjectsInfo/ProjectsList';
-import FlipCard from '../../../components/FlipCard/FlipCard'
+import FlipCard from '../../../components/flipcard/FlipCard';
 
 export default function MyApp() {
 
