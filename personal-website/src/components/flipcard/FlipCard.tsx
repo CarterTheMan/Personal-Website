@@ -52,12 +52,12 @@ export default function FlipCard(props : {projectInformation : projectInformatio
 						style={{backgroundImage: "url(" + process.env.PUBLIC_URL + project.imagePath + ")", backgroundSize: "cover"}}
 					>
 						<div className="card-content-front">
-							{project.title}
+							{/* {project.title} */}
 						</div>
 					</div>
 					<div className="flip-card-back">
 						<div className="card-content-back">
-							<h1>Description</h1>
+							<h1>{project.title}</h1>
 							<hr style={{height:2}} />
 							<p>{description}</p>
 						</div>

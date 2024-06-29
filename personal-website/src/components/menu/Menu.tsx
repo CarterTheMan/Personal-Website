@@ -38,7 +38,7 @@ const resume = function () {
 // https://github.com/parthwebdev/UI-Animation/blob/main/Menus/01/style.css
 export default function MyApp() {
   return (
-    <div>
+    <div className='menu'>
         <div>
             <div className="divClassLeft">
                 <img className="menu-img" src={process.env.PUBLIC_URL + '/Personal-Logo.jpg'} />

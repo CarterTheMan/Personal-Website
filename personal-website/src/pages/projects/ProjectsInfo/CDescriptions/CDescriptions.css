@@ -1,0 +1,18 @@
+.cDescriptions {
+    margin: auto;
+    padding-left: 5%;
+}
+
+.cDescriptions p {
+    color: #FFFFFF
+}
+
+.cDescriptions li {
+    color: #FFFFFF;
+    margin-left: 2%;
+}
+
+.cDescriptions ul {
+    list-style-type:circle;
+    display: contents;
+}

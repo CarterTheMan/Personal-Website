@@ -16,6 +16,8 @@ export default function MyApp({title, description, videoID, codeLink} : props) {
         event.target.playVideo();
     }
 
+    const videoExists = videoID != "";
+
     const options: YouTubeProps['opts'] = {
         height: 400,
         width: 600,
@@ -27,9 +29,12 @@ export default function MyApp({title, description, videoID, codeLink} : props) {
     return (
         <div>
             <h1 className='project-header'>{title}</h1>
-            <div className='project-video-div'>
-                <YouTube videoId={videoID} opts={options} onReady={onPlayerReady} style={{width: 100}}/>;
-            </div>
+            {videoExists &&  
+                <div className='project-video-div'>
+                    <YouTube videoId={videoID} opts={options} onReady={onPlayerReady} style={{width: 100}}/>;
+                </div>
+            }
+            
             {description}
             <br />
             <br />
@@ -37,7 +42,7 @@ export default function MyApp({title, description, videoID, codeLink} : props) {
                 <div style={{color: 'white'}} >
                     Click this button to view the project code
                 </div>
-                <button onClick={() => window.open(codeLink)}>View code</button>
+                <button onClick={() => window.open(codeLink)} style={{marginBottom: 20}}>View code</button>
             </div>
         </div>
     );

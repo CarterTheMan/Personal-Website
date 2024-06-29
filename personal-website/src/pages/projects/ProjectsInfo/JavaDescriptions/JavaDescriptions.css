@@ -1,16 +1,16 @@
-.pythonDescriptions {
+.javaDescriptions {
     margin: auto;
     padding-left: 5%;
 }
 
-.pythonDescriptions p {
+.javaDescriptions p {
     color: #FFFFFF
 }
 
-.pythonDescriptions li {
+.javaDescriptions li {
     color: #FFFFFF
 }
 
-.pythonDescriptions ul {
+.javaDescriptions ul {
     list-style-type:circle;
 }

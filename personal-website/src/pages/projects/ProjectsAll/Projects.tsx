@@ -1,5 +1,5 @@
 import './Projects.css';
-import { pythonProjects, javaProjects } from '../ProjectsInfo/ProjectsList';
+import { pythonProjects, javaProjects, CProjects } from '../ProjectsInfo/ProjectsList';
 import FlipCard from '../../../components/flipcard/FlipCard';
 
 export default function MyApp() {
@@ -18,6 +18,14 @@ export default function MyApp() {
             <div className='projects-container'>
                 {
                     javaProjects.map(function(data) {
+                        return (<FlipCard projectInformation={data} />)
+                    })
+                }
+            </div>
+            <h1>C/C++ Projects</h1>
+            <div className='projects-container'>
+                {
+                    CProjects.map(function(data) {
                         return (<FlipCard projectInformation={data} />)
                     })
                 }
