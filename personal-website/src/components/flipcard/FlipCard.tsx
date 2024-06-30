@@ -7,7 +7,8 @@ interface projectInformationType {
 	title : string, 
 	cardDescription : string,
 	description : React.ReactNode,
-	videoID : string,
+	videoID : string[],
+	videoDescriptions : string[],
 	imagePath : string,
 	codeLink : string,
 }
@@ -30,7 +31,7 @@ export default function FlipCard(props : {projectInformation : projectInformatio
 	const specificProject = () => {
 		const root = createRoot(document.getElementById('root')!)
 		root.render(
-			<Project  title={project.title} description={project.description} videoID={project.videoID!} codeLink={project.codeLink!} />
+			<Project  title={project.title} description={project.description} videoID={project.videoID!} videoDescriptions={project.videoDescriptions} codeLink={project.codeLink!} />
 		);
 	}
     

@@ -1,16 +1,32 @@
 .javaDescriptions {
     margin: auto;
     padding-left: 5%;
+    padding-right: 5%;
 }
 
 .javaDescriptions p {
-    color: #FFFFFF
+    color: white;
 }
 
 .javaDescriptions li {
-    color: #FFFFFF
+    color: white;
 }
 
-.javaDescriptions ul {
-    list-style-type:circle;
+.javaDescriptions img {
+    text-align: center;
+    height: 300px;
+}
+
+.javaDescriptionsImage {
+    text-align: center
+}
+
+.javaDescriptionsRow {
+    display: flex;
+}
+
+.javaDescriptionsColumn {
+    flex: 50%;
+    padding: 5px;
+    text-align: center;
 }
