@@ -22,6 +22,13 @@
     padding-right: 5vw;
 }
 
+.about-text-left ul {
+    font-size: 1vw;
+    color: white;
+    list-style-type: disc;
+    display: block;
+}
+
 .about-text-left h1 {
     font-size: 2vw;
     color: #5AA3FB;
@@ -54,6 +61,13 @@
   
 .about-text-right {
     padding-left: 5vw;
+}
+
+.about-text-right ul {
+    font-size: 1vw;
+    color: white;
+    list-style-type: disc;
+    display: block;
 }
 
 .about-text-right h1 {

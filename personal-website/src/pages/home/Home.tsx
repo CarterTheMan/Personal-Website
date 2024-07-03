@@ -12,7 +12,7 @@ export default function MyApp() {
             <h3 className="home-h3">Hi. I'm</h3>
             <h1 className="home-h1"><span style={{color : '#5AA3FB'}}>Carter</span> Moseley</h1>
             <br />
-            <p className="home-p">I'm a software engineer focused on experience in machine learning, web dev, the AWS cloud and Cyber Security</p>
+            <p className="home-p">A Software Engineer with experience in AWS, Web Development, Machine Learning and Cyber Security</p>
             <br />
         </div>
     </div>
