@@ -25,7 +25,7 @@ export default function MyApp(this: any, {title, description, videoID, videoDesc
     }
 
     const oneVideo = videoID.length == 1;
-    const multiVideos = videoID.length >= 1;
+    const multiVideos = videoID.length > 1;
 
     const options: YouTubeProps['opts'] = {
         height: 400,
