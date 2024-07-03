@@ -1,5 +1,5 @@
 import './Project.css';
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { createRoot } from 'react-dom/client';
 import YouTubePlayer from 'youtube-player';
 import YouTube, { YouTubeProps } from 'react-youtube';
@@ -13,7 +13,11 @@ interface props {
     codeLink: string
 }
 
-export default function MyApp({title, description, videoID, videoDescriptions, codeLink} : props) {
+export default function MyApp(this: any, {title, description, videoID, videoDescriptions, codeLink} : props) {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const onPlayerReady: YouTubeProps['onReady'] = (event) => {
         // access to player in all event handlers via event.target
