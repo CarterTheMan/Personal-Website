@@ -1,7 +1,7 @@
 # Personal-Website
 This is a website to act as my personal portfolio
 
-You can see all my information, projects and even my resume. The base is done, I just have to add the specifics for each project. 
+You can see all my information, projects and even my resume.
 
 This may need to change color schemes, but that will be addressed later once everything else is complete.
 
