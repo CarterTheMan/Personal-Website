@@ -6,6 +6,7 @@ import YouTube, { YouTubeProps } from 'react-youtube';
 import ProjectsMultipleVideos from '../ProjectsMultipleVideos/ProjectsMultipleVideos';
 
 interface props {
+    projectType: string,
 	title: string,
 	description: React.ReactNode,
 	videoID: string[],
@@ -13,7 +14,7 @@ interface props {
     codeLink: string
 }
 
-export default function MyApp(this: any, {title, description, videoID, videoDescriptions, codeLink} : props) {
+export default function MyApp(this: any, {projectType, title, description, videoID, videoDescriptions, codeLink} : props) {
 
     useEffect(() => {
         window.scrollTo(0, 0);

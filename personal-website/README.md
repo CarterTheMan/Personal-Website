@@ -2,6 +2,28 @@ This is the react app for the personal website of Carter Moseley.
 
 Everything here was built by Carter Moseley and this will be used as his professional portfolio
 
+# Adding a new Project Type
+1. Create a new descriptions directory for the new type under ProjectsInfo
+2. Create the corresponding .tsx and .css files 
+3. Navigate to projectLists.tsx
+4. Create a new list for the new project type 
+5. Navigate to Projects.tsx
+6. Create a new heading and a div mapping for the list just created in projectLists.tsx 
+
+# Adding a new Project
+1. Navigate to the correct {Project Type}Description file
+2. Add everything for the new project
+3. Navigate to ProjectList.tsx 
+4. Add all information for the new project to the corresponding project type list
+5. Navigate to routes.tsx
+6. Add the new project to the end of the routes for the new project type
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

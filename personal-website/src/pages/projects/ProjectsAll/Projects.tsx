@@ -10,7 +10,7 @@ export default function MyApp() {
             <div className='projects-container'>
                 {
                     pythonProjects.map(function(data) {
-                        return (<FlipCard projectInformation={data} />)
+                        return (<FlipCard projectInformation={data} projectType={"python"} />)
                     })
                 }
             </div>
@@ -18,7 +18,7 @@ export default function MyApp() {
             <div className='projects-container'>
                 {
                     javaProjects.map(function(data) {
-                        return (<FlipCard projectInformation={data} />)
+                        return (<FlipCard projectInformation={data} projectType={"java"} />)
                     })
                 }
             </div>
@@ -26,7 +26,7 @@ export default function MyApp() {
             <div className='projects-container'>
                 {
                     CProjects.map(function(data) {
-                        return (<FlipCard projectInformation={data} />)
+                        return (<FlipCard projectInformation={data} projectType={"c"} />)
                     })
                 }
             </div>

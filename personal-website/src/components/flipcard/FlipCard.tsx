@@ -15,9 +15,10 @@ interface projectInformationType {
 
 // https://www.geeksforgeeks.org/design-a-flip-card-effect-using-reactjs/
 // https://blog.openreplay.com/creating-animated-flip-cards-in-react/
-export default function FlipCard(props : {projectInformation : projectInformationType}) {
+export default function FlipCard(props : {projectInformation : projectInformationType, projectType : string}) {
 	const [isFlipped, setIsFlipped] = useState(false);
 	const project = props.projectInformation;
+	const projectType = props.projectType;
 	const description = project.cardDescription;
 
 	const handleMouseEnter = () => {
@@ -28,12 +29,20 @@ export default function FlipCard(props : {projectInformation : projectInformatio
 		setIsFlipped(false);
 	};
 
-	const specificProject = () => {
-		const root = createRoot(document.getElementById('root')!)
-		root.render(
-			<Project  title={project.title} description={project.description} videoID={project.videoID!} videoDescriptions={project.videoDescriptions} codeLink={project.codeLink!} />
-		);
+	function escapeRegExp(string: string) {
+		return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
+	  }
+	function replaceAll(str: string, match: string, replacement: string){
+	 	return str.replace(new RegExp(escapeRegExp(match), 'g'), ()=>replacement);
 	}
+
+	const specificProject = () => {
+		console.log(project.title.replace(" ", "-"));
+		console.log(replaceAll(project.title, " ", "-"));
+		const link = "/projects/" + projectType + "/" + replaceAll(project.title, " ", "-");
+		window.location.href = link;
+	}
+	
     
 	return (
 		<div 
