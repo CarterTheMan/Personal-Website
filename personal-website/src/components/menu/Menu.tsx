@@ -5,9 +5,10 @@ import { SocialIcon } from 'react-social-icons'
 import Home from '../../pages/home/Home';
 import AboutMe from '../../pages/aboutme/AboutMe';
 import Projects from '../../pages/projects/ProjectsAll/Projects';
-import Resume from '../../pages/Resume/Resume'
+import Resume from '../../pages/resume/Resume'
 
 const homePage = function () {
+    window.location.href = "/";
     const root = createRoot(document.getElementById('root')!)
     root.render(
         <Home />
@@ -15,6 +16,7 @@ const homePage = function () {
 }
 
 const aboutMePage = function () {
+    window.location.href = "/aboutme";
     const root = createRoot(document.getElementById('root')!)
     root.render(
         <AboutMe />
@@ -22,6 +24,7 @@ const aboutMePage = function () {
 }
 
 const projectsPage = function () {
+    window.location.href = "/projects";
     const root = createRoot(document.getElementById('root')!)
     root.render(
         <Projects />
@@ -29,6 +32,7 @@ const projectsPage = function () {
 }
 
 const resume = function () {
+    window.location.href = "/resume";
     const root = createRoot(document.getElementById('root')!)
     root.render(
         <Resume />
