@@ -1,7 +1,7 @@
 import { createBrowserRouter, Route, RouteObject, Routes } from "react-router-dom";
 import Home from "../pages/home/Home";
 import AboutMe from "../pages/aboutme/AboutMe";
-import Resume from "../pages/resume/Resume";
+import Resume from "../pages/Resume/Resume";
 import Projects from "../pages/projects/ProjectsAll/Projects";
 import { pythonProjects as pp, javaProjects as jp, CProjects as c } from "../pages/projects/ProjectsInfo/ProjectsList";
 import Project from "../pages/projects/ProjectsIndividual/Project";

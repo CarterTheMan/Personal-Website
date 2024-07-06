@@ -5,7 +5,7 @@ import { SocialIcon } from 'react-social-icons'
 import Home from '../../pages/home/Home';
 import AboutMe from '../../pages/aboutme/AboutMe';
 import Projects from '../../pages/projects/ProjectsAll/Projects';
-import Resume from '../../pages/resume/Resume'
+import Resume from '../../pages/Resume/Resume'
 
 const homePage = function () {
     window.location.href = "/";
