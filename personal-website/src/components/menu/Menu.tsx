@@ -9,34 +9,34 @@ import Resume from '../../pages/resume/Resume'
 
 const homePage = function () {
     window.location.href = "/";
-    const root = createRoot(document.getElementById('root')!)
-    root.render(
-        <Home />
-    );
+    // const root = createRoot(document.getElementById('root')!)
+    // root.render(
+    //     <Home />
+    // );
 }
 
 const aboutMePage = function () {
     window.location.href = "/aboutme";
-    const root = createRoot(document.getElementById('root')!)
-    root.render(
-        <AboutMe />
-    );
+    // const root = createRoot(document.getElementById('root')!)
+    // root.render(
+    //     <AboutMe />
+    // );
 }
 
 const projectsPage = function () {
     window.location.href = "/projects";
-    const root = createRoot(document.getElementById('root')!)
-    root.render(
-        <Projects />
-    );
+    // const root = createRoot(document.getElementById('root')!)
+    // root.render(
+    //     <Projects />
+    // );
 }
 
 const resume = function () {
     window.location.href = "/resume";
-    const root = createRoot(document.getElementById('root')!)
-    root.render(
-        <Resume />
-    );
+    // const root = createRoot(document.getElementById('root')!)
+    // root.render(
+    //     <Resume />
+    // );
 }
   
 // https://github.com/parthwebdev/UI-Animation/blob/main/Menus/01/style.css
