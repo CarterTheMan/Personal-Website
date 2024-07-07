@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { createRoot } from 'react-dom/client';
 import "./FlipCard.css";
 import Project from "../../pages/projects/ProjectsIndividual/Project";
+import { useNavigate } from "react-router-dom";
 
 interface projectInformationType {
 	title : string, 
@@ -16,6 +17,7 @@ interface projectInformationType {
 // https://www.geeksforgeeks.org/design-a-flip-card-effect-using-reactjs/
 // https://blog.openreplay.com/creating-animated-flip-cards-in-react/
 export default function FlipCard(props : {projectInformation : projectInformationType, projectType : string}) {
+	let navigate = useNavigate(); 
 	const [isFlipped, setIsFlipped] = useState(false);
 	const project = props.projectInformation;
 	const projectType = props.projectType;
@@ -38,7 +40,7 @@ export default function FlipCard(props : {projectInformation : projectInformatio
 
 	const specificProject = () => {
 		const link = "/projects/" + projectType + "/" + replaceAll(project.title, " ", "-");
-		window.location.href = link;
+		navigate(link);
 	}
 	
     
