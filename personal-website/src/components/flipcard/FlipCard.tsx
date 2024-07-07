@@ -37,8 +37,6 @@ export default function FlipCard(props : {projectInformation : projectInformatio
 	}
 
 	const specificProject = () => {
-		console.log(project.title.replace(" ", "-"));
-		console.log(replaceAll(project.title, " ", "-"));
 		const link = "/projects/" + projectType + "/" + replaceAll(project.title, " ", "-");
 		window.location.href = link;
 	}
