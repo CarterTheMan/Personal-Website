@@ -6,8 +6,7 @@ You can see all my information, projects and even my resume.
 This may need to change color schemes, but that will be addressed later once everything else is complete.
 
 TODO: 
-1. Add in unique projects
-2. Add the newer projects
+1. Add the newer projects
 
 Use this figma design
 https://www.figma.com/file/W6ly1yMLQ71Cdp4dRjaUQu/Personal-Website?type=design&node-id=0%3A1&mode=design&t=6XdLOieI81llVUW2-1
