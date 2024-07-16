@@ -33,7 +33,7 @@ export default function ProjectsMultipleVideos({videoID, videoDescriptions} : pr
                     </h3>
                 </div>
                 <div className='projects-multiple-videos-video-div'>
-                    <YouTube videoId={videoID[i]} opts={options} onReady={onPlayerReady} style={{width: 'calc(50vw - 300px)'}}/>
+                    <YouTube videoId={videoID[i]} opts={options} onReady={onPlayerReady} style={{justifyContent: "center"}}/>
                 </div>
                 <br />
                 <br />
